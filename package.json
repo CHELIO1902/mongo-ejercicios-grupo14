@@ -1,0 +1,24 @@
+{
+  "name": "mongo-ejercicios-grupo14",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/servo98/mongo-ejercicios-grupo14.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/servo98/mongo-ejercicios-grupo14/issues"
+  },
+  "homepage": "https://github.com/servo98/mongo-ejercicios-grupo14#readme",
+  "dependencies": {
+    "mongoose": "^6.6.0"
+  }
+}
