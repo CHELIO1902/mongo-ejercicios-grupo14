@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 import Book from './models/Book.js';
 import * as movieCrud from './ejercicios/ejercicios1.js';
+import * as graduatedCrud from './ejercicios/ejercicios2.js';
 
 /**
  * DB driver - Conectar a la db
@@ -63,8 +64,13 @@ mongoose.connect('uri', async () => {
   // } catch (error) {
   //   console.error('Ha ocurrido un error al hacer el crud');
   // }
-  await movieCrud.create();
-  await movieCrud.read();
-  await movieCrud.update();
-  await movieCrud.remove();
+  // await movieCrud.create();
+  // await movieCrud.read();
+  // await movieCrud.update();
+  // await movieCrud.remove();
+
+  await graduatedCrud.create();
+  await graduatedCrud.read();
+  await graduatedCrud.update();
+  await graduatedCrud.remove();
 });
