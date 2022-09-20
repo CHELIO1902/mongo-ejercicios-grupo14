@@ -46,6 +46,7 @@ const update = async () => {
 const remove = async () => {
   try {
     await Graduated.deleteMany();
+    await Graduated.create({});
   } catch (error) {
     console.error('Error al borrar graduados', error);
   }

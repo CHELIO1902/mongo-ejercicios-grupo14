@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 import Book from './models/Book.js';
 import * as movieCrud from './ejercicios/ejercicios1.js';
 import * as graduatedCrud from './ejercicios/ejercicios2.js';
+import * as vetCrud from './ejercicios/ejercicios3.js';
 
 /**
  * DB driver - Conectar a la db
@@ -16,9 +17,9 @@ import * as graduatedCrud from './ejercicios/ejercicios2.js';
  * delete
  *
  */
-mongoose.connect('uri', async () => {
+mongoose.connect('mongodb://localhost/veterinaria', async () => {
   // try {
-  //   console.log('Se ha conectado a la base de datos');
+  console.log('Se ha conectado a la base de datos');
   //   /**
   //    * await - tenemos que esperar una respuesta
   //    * async - envolver una función que tenga que esperar
@@ -68,9 +69,10 @@ mongoose.connect('uri', async () => {
   // await movieCrud.read();
   // await movieCrud.update();
   // await movieCrud.remove();
-
-  await graduatedCrud.create();
-  await graduatedCrud.read();
-  await graduatedCrud.update();
-  await graduatedCrud.remove();
+  // await graduatedCrud.create();
+  // await graduatedCrud.read();
+  // await graduatedCrud.update();
+  // await graduatedCrud.remove();
+  await vetCrud.create();
+  await vetCrud.getAll();
 });
